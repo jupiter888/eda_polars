@@ -1,6 +1,6 @@
 import polars as pl
 
-# Create a DataFrame from an excel file 
+# Create a DataFrame from an existing excel file 
 df = pl.read_excel('input_file.xlsx')
 
 # Get column names
@@ -16,3 +16,4 @@ missing_values_sum = df.is_null().sum().sum()
 print("Column names:", col_names)
 print("Row count:", row_count)
 print("Sum of missing values:", missing_values_sum)
+
